@@ -10,6 +10,7 @@ URL: https://github.com/lxqt/lxqt-menu-data
 License: GPL
 Group: System/Libraries
 BuildRequires: cmake ninja
+BuildRequires: qt5-macros
 BuildArch: noarch
 
 %description
