@@ -11,6 +11,7 @@ License: GPL
 Group: System/Libraries
 BuildRequires: cmake ninja
 BuildRequires: qt5-macros
+BuildRequires: cmake(lxqt-build-tools)
 BuildArch: noarch
 
 %description
