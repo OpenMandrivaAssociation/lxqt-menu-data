@@ -12,6 +12,7 @@ Group: System/Libraries
 BuildRequires: cmake ninja
 BuildRequires: qt5-macros
 BuildRequires: cmake(lxqt-build-tools)
+BuildRequires: cmake(Qt5LinguistTools)
 BuildArch: noarch
 
 %description
