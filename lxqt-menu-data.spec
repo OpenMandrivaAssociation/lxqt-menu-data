@@ -2,7 +2,7 @@
 %define devname %mklibname lxqt-menu-data -d
 
 Name: lxqt-menu-data
-Version: 1.4.0
+Version: 1.4.1
 Release: 1
 Source0: https://github.com/lxqt/lxqt-menu-data/archive/%{version}/%{name}-%{version}.tar.gz
 Summary: Menu files for LXQt Panel, Configuration Center and PCManFM-Qt/libfm-qt
