@@ -11,6 +11,8 @@ License: GPL
 Group: System/Libraries
 BuildRequires: cmake ninja
 BuildRequires: cmake(lxqt2-build-tools)
+BuildRequires: cmake(Qt6)
+BuildRequires: cmake(Qt6Core)
 BuildRequires: cmake(Qt6LinguistTools)
 BuildArch: noarch
 
