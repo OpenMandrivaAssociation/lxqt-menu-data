@@ -23,6 +23,10 @@ Menu files for LXQt Panel, Configuration Center and PCManFM-Qt/libfm-qt
 Summary: Development files for %{name}
 Group: Development/C
 Requires: %{name} = %{EVRD}
+# Fix misnamed package that somehow made it into abf
+%if "%{_lib}" != "lib"
+Obsoletes: liblxqt-menu-data-devel < %{EVRD}
+%endif
 
 %description -n %{devname}
 Development files (Headers etc.) for %{name}.
