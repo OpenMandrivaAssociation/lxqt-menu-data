@@ -9,7 +9,7 @@ Summary: Menu files for LXQt Panel, Configuration Center and PCManFM-Qt/libfm-qt
 URL: https://github.com/lxqt/lxqt-menu-data
 License: GPL
 Group: System/Libraries
-BuildRequires: cmake ninja
+BuildRequires: ninja
 BuildRequires: cmake(lxqt2-build-tools)
 BuildRequires: cmake(Qt6)
 BuildRequires: cmake(Qt6Core)
@@ -35,10 +35,9 @@ Menu files for LXQt Panel, Configuration Center and PCManFM-Qt/libfm-qt
 
 %prep
 %autosetup -p1
+%build
 %cmake \
 	-G Ninja
-
-%build
 %ninja_build -C build
 
 %install
