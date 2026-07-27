@@ -3,13 +3,13 @@
 
 Name: lxqt-menu-data
 Version: 2.4.0
-Release: 1
+Release: 2
 Source0: https://github.com/lxqt/lxqt-menu-data/releases/download/%{version}/lxqt-menu-data-%{version}.tar.xz
 Summary: Menu files for LXQt Panel, Configuration Center and PCManFM-Qt/libfm-qt
 URL: https://github.com/lxqt/lxqt-menu-data
 License: GPL
 Group: System/Libraries
-BuildRequires: ninja
+BuildSystem: cmake
 BuildRequires: cmake(lxqt2-build-tools)
 BuildRequires: cmake(Qt6)
 BuildRequires: cmake(Qt6Core)
@@ -32,16 +32,6 @@ Obsoletes: liblxqt-menu-data-devel < %{EVRD}
 Development files (Headers etc.) for %{name}.
 
 Menu files for LXQt Panel, Configuration Center and PCManFM-Qt/libfm-qt
-
-%prep
-%autosetup -p1
-%build
-%cmake \
-	-G Ninja
-%ninja_build
-
-%install
-%ninja_install -C build
 
 %files
 %{_sysconfdir}/xdg/menus/*
