@@ -2,9 +2,9 @@
 %define devname %mklibname lxqt-menu-data -d
 
 Name: lxqt-menu-data
-Version: 2.3.0
+Version: 2.4.0
 Release: 1
-Source0: https://github.com/lxqt/lxqt-menu-data/archive/%{version}/%{name}-%{version}.tar.gz
+Source0: https://github.com/lxqt/lxqt-menu-data/releases/download/%{version}/lxqt-menu-data-%{version}.tar.xz
 Summary: Menu files for LXQt Panel, Configuration Center and PCManFM-Qt/libfm-qt
 URL: https://github.com/lxqt/lxqt-menu-data
 License: GPL
