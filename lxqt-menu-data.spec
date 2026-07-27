@@ -38,7 +38,7 @@ Menu files for LXQt Panel, Configuration Center and PCManFM-Qt/libfm-qt
 %build
 %cmake \
 	-G Ninja
-%ninja_build -C build
+%ninja_build
 
 %install
 %ninja_install -C build
